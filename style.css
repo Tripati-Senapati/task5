@@ -1,0 +1,161 @@
+/* Reset & Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+
+/* Section Layout */
+
+.overview-section {
+    padding: 80px 8%;
+}
+
+.overview-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+
+/* Left Side */
+
+.overview-left {
+    flex: 1;
+}
+
+.overview-left h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    color: #444;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.details-text {
+    color: #444;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+
+/* Feature Icons */
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 28px;
+    margin-bottom: 35px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 220px;
+}
+
+.icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle img {
+    width: 24px;
+    height: 24px;
+}
+
+.blue {
+    background-color: #e5f0ff;
+}
+
+.green {
+    background-color: #d9f8e7;
+}
+
+.light-blue {
+    background-color: #e9f2ff;
+}
+
+.feature-text h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.feature-text p {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* Button */
+
+.explore-btn {
+    display: inline-block;
+    background-color: #00b67a;
+    color: #fff;
+    padding: 12px 26px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #00a56e;
+}
+
+
+/* Right Side */
+
+.overview-right {
+    flex: 1;
+}
+
+.overview-right img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+}
+
+
+/* Responsive Layout */
+
+@media (max-width: 992px) {
+    .overview-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .features {
+        justify-content: center;
+    }
+    .feature-item {
+        justify-content: center;
+    }
+    .overview-right img {
+        max-width: 90%;
+        margin-bottom: 40px;
+    }
+}
