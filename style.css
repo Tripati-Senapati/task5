@@ -134,7 +134,7 @@ body {
 }
 
 .overview-right img {
-    width: 100%;
+    width: 120%;
     border-radius: 14px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     object-fit: cover;
@@ -158,4 +158,5 @@ body {
         max-width: 90%;
         margin-bottom: 40px;
     }
+
 }
